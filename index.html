@@ -4,9 +4,122 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Control de Asistencias</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Control de Asistencias</h1>
-        <p>Mi sistema esta funcionando en electron</p>  
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Control de Asistencias</h2>
+                <span>Control de empleados</span>
+            </div>
+            <nav>
+                <button class="menu-item active">
+                    Dashboard
+                </button>
+                <button class="menu-item">
+                    Empleados
+                </button>
+                <button class="menu-item">
+                    Sucursales
+                </button>
+                <button class="menu-item">
+                    Asistencias
+                </button>
+                <button class="menu-item">
+                    Faltas
+                </button>
+                <button class="menu-item">
+                    Retardos
+                </button>
+                <button class="menu-item">
+                    Prestamos
+                </button>
+                <button class="menu-item">
+                    Reportes
+                </button>
+            </nav>
+            <div class="Usuario">
+                <strong>Administrador</strong>
+                <span>Usuario del sistema</span>
+            </div>
+        </aside>
+        <main class="main">
+            <header class="header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Resumen del control de asistencias</p>
+                </div>
+                <div class="fecha">
+                    08 de Octubre de 2026
+                </div>
+            </header>
+            <section class="cards">
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <div>
+                        <span>Empleados</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <div>
+                        <span>Presentes</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">❌</div>
+                    <div>
+                        <span>Faltas</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⏰</div>
+                    <div>
+                        <span>Retardos</span>
+                    </div>
+            </section>
+            <section class="dashboard-grid">
+                <div class="panel">
+                <div class="panel-header">
+                    <h3>Asistencias</h3>
+                    <button class="btn">
+                        Ver todas
+                    </button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Empleado</th>
+                            <th>Sucursal</th>
+                            <th>Entrada</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Luis</td>
+                            <td>Matriz</td>
+                            <td>09:00</td>
+                            <td>
+                                <span class="estado presente">Presente</span>
+                            </td>
+                        </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>Actividad Reciente</h3>
+                </div>
+                <div class="actividad">
+                    <div>
+                        <strong>Asistencia Registrada</strong>
+                        <span>Luis registró</span>
+                        <small>Hace 2 minutos</small>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
     </body>
 </html>
